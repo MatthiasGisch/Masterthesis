@@ -3,10 +3,10 @@ import numpy as np
 import pandas as pd
 
 # Load the dataset into a Pandas DataFrame
-df = pd.read_csv('Testmessung2/Leer.csv')
-df2 = pd.read_csv('Testmessung2/Wasser.csv')
-df3 = pd.read_csv('Testmessung2/WasserEssig.csv')
-df4 = pd.read_csv('Testmessung2/Papierspritzguss.csv')
+df = pd.read_csv('C:/Users/matth/Desktop/Masterthesis/Messungen/13.11.2024 Roboterzelle/Testmessung2/Leer.csv')
+df2 = pd.read_csv('C:/Users/matth/Desktop/Masterthesis/Messungen/13.11.2024 Roboterzelle/Testmessung2/Wasser.csv')
+df3 = pd.read_csv('C:/Users/matth/Desktop/Masterthesis/Messungen/13.11.2024 Roboterzelle/Testmessung2/WasserEssig.csv')
+df4 = pd.read_csv('C:/Users/matth/Desktop/Masterthesis/Messungen/13.11.2024 Roboterzelle/Testmessung2/Papierspritzguss.csv')
 
 measurements = df['Measurement']
 time = df['Time']
