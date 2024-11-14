@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-
-
-
 #Measuring and Assessing the Resource- and Energy Efficiency of AIoT-Devices and Algorithms - Replication package
 
 #Copyright (C) 2022 Achim Guldner, Julien Murach
@@ -43,18 +40,14 @@ import matplotlib.pyplot as plt
 import tensorflow 
 
 #from tensorflow import keras
-
 from keras import initializers
 
 
 ##########   Für die LDA nötigen Importe
-
-
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 
 ##########   Allgemeine Importe
-
 import pandas as pd
 
 from sklearn.model_selection import train_test_split  # Trennung der Daten in Trainings- und Testdaten
@@ -67,10 +60,7 @@ import calculateTheQuality as cQ
 from sklearn.linear_model import LogisticRegression
 
 # *********************  Steuerparameter  ******************************  
-
-
 VERBOSE = 1
-
 
 print("sysargv:")
 print(sys.argv[1][:])
@@ -84,15 +74,11 @@ finalName = firstpart[10:]
 print(finalName)
 
 
-
 filename = "ActionLog_LDA_" + str(finalName) + ".txt"
 
 scores = "Score_LDA_" + str(finalName) + ".txt"
 
 scoresLogReg = "Score_LDA_LogReg_" + str(finalName) + ".txt"
-
-
-
 
 
 numpy_array = df.to_numpy()
@@ -103,7 +89,6 @@ for element in label:
 data = numpy_array[:,:-1]
 
 iterations = 1
-
 
 
 for counter in range(iterations):

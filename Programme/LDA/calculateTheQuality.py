@@ -10,7 +10,6 @@ import numpy as np
 TEST = 1
 VERBOSE = 0
 
-
 def calculateTheQuality(ylabel, ypredicted):
     accuracy = accuracy_score(ylabel,ypredicted)
     precision = precision_score(ylabel, ypredicted,average="micro")
@@ -39,9 +38,4 @@ def calculateTheQuality(ylabel, ypredicted):
         
         print("F1_score: " + str(F1_score))
         
-
-
-
-
-
     return accuracy,precision,specificity_global,F1_score
