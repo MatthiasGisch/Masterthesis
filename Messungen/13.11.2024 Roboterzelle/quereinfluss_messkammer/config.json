@@ -1,0 +1,99 @@
+{
+    "Sensor1": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor2": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor3": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor4": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor5": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor6": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor7": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor8": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "MeasurementName": "quereinfluss_messkammer",
+    "OptimizationAlgorithm": "Algorithm 1",
+    "IterationsPerGlass": "1",
+    "Glasses": {
+        "Glass1": {
+            "content": "messkammer",
+            "temperatureTarget": "21"
+        },
+        "Glass2": {
+            "content": "messkammer",
+            "temperatureTarget": "21"
+        },
+        "Glass3": {
+            "content": "messkammer",
+            "temperatureTarget": "21"
+        },
+        "Glass4": {
+            "content": "messkammer",
+            "temperatureTarget": "21"
+        },
+        "Glass5": {
+            "content": "messkammer",
+            "temperatureTarget": "21"
+        }
+    }
+}

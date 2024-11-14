@@ -1,0 +1,99 @@
+{
+    "Sensor1": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor2": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor3": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor4": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor5": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor6": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor7": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor8": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "5000",
+        "upHeatTime": "1000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "MeasurementName": "Testmessung 13.11.2024",
+    "OptimizationAlgorithm": "Algorithm 1",
+    "IterationsPerGlass": "1",
+    "Glasses": {
+        "Glass1": {
+            "content": "Leer",
+            "temperatureTarget": "30"
+        },
+        "Glass2": {
+            "content": "Wasser",
+            "temperatureTarget": "30"
+        },
+        "Glass3": {
+            "content": "WasserEssig",
+            "temperatureTarget": "30"
+        },
+        "Glass4": {
+            "content": "Papierspritzguss",
+            "temperatureTarget": "30"
+        },
+        "Glass5": {
+            "content": "kein Glas",
+            "temperatureTarget": "30"
+        }
+    }
+}
