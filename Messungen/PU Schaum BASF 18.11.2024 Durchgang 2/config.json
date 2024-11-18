@@ -1,0 +1,99 @@
+{
+    "Sensor1": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor2": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor3": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor4": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor5": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor6": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor7": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "Sensor8": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "10000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "20"
+    },
+    "MeasurementName": "PU Schaum BASF 18.11.2024 Durchgang 2",
+    "OptimizationAlgorithm": "Algorithm 1",
+    "IterationsPerGlass": "1",
+    "Glasses": {
+        "Glass1": {
+            "content": "645-2",
+            "temperatureTarget": "60"
+        },
+        "Glass2": {
+            "content": "645-2.2",
+            "temperatureTarget": "60"
+        },
+        "Glass3": {
+            "content": "644-2",
+            "temperatureTarget": "60"
+        },
+        "Glass4": {
+            "content": "644-2.2",
+            "temperatureTarget": "60"
+        },
+        "Glass5": {
+            "content": "kein glas",
+            "temperatureTarget": "60"
+        }
+    }
+}
