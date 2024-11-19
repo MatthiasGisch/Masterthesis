@@ -1,27 +1,37 @@
 import csv
+import numpy as np
 
-avg_measurement_sensor1 = 0
+class LDA:
 
-with open("C:/Users/matth/Desktop/Masterthesis/Messungen/13.11.2024 Roboterzelle/Testmessung2/Leer.csv") as csvdatei:
-    csv_reader_object = csv.reader(csvdatei)
+    def __init__(self, n_components):
+        self.n_components = n_components
+        self.linear_discriminants = None
+    
+    def fit(self, X, y):
+        n_features = X.shape[1] # anzahl werte
+        class_labels = np.unique(y)
 
-    zeilennummer = 0
-    for row in csv_reader_object:
+        # S_W, S_B
+        mean_overall = np.mean(X, axis=0)
+        S_W = np.zeros((n_features, n_features)) # 2,2
+        S_B = np.zeros((n_features, n_features)) # 2,2
+        for c in class_labels:
+            X_c = X[y == c]
+            mean_c = np.mean(X_c, axis=0)
+            S_W += (X_c - mean_c).T.dot(X_c - mean_c)
 
-        if zeilennummer == 0:
-            print(f'Spaltennamen sind: {", ".join(row)}')
-        else:
-            print(f'- Label: {row[0]} \t| Time: {row[1]} \t| SensorNr: {row[2]} \t| Identifier: {row[3]} \t| Interval: {row[4]} \t| Measurement: {row[5]} \t| Iteration: {row[6]}')
-        zeilennummer += 1
+            n_c = X_c.shape[0]
+            mean_dif = (mean_c - mean_overall).reshape(n_features, 1)
+            S_B += n_c * (mean_dif).dot(mean_dif.T)
 
-    for row in csv_reader_object:
+        A = np.linalg.inv(S_W).dot(S_B)
+        eigenvalues, eigenvectors = np.linalg.eig(A)
+        eigenvectors = eigenvectors.T
+        idxs = np.argsort(abs(eigenvalues))[::-1]
+        eigenvalues = eigenvalues[idxs]
+        eigenvectors = eigenvectors[idxs]
+        self.linear_discriminants = eigenvectors[0:self.n_components]
 
-        if {row[2]} == 1:
-            avg_measurement_sensor1 += {row[5]}
+    def transform(self, X):
+        return np.dot(X, self.linear_discriminants.T)
 
-        print(avg_measurement_sensor1)
-
-    avg_measurement_sensor1
-    print(f'Durchschnittswert Sensor 1: {avg_measurement_sensor1}')
-
-    print(f'Anzahl Datensätze: {zeilennummer-1}')
