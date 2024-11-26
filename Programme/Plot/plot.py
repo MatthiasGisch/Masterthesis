@@ -19,9 +19,9 @@ time4 = df4['Time']
 
 # Create a line plot
 plt.plot(time, measurements, color = 'blue', label = '644-2')
-plt.plot(time2, measurements2, color = 'red', label = '644-8')
-plt.plot(time3, measurements3, color = 'green', label = '645-1')
-plt.plot(time4, measurements4, color = 'yellow', label = '645-2')
+#plt.plot(time2, measurements2, color = 'red', label = '644-8')
+#plt.plot(time3, measurements3, color = 'green', label = '645-1')
+plt.plot(time, measurements4, color = 'yellow', label = '645-2')
 plt.grid(True)
 
 plt.ylabel('Messwert')
