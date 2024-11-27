@@ -1,0 +1,97 @@
+{
+    "Sensor1": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor2": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor3": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor4": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor5": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor6": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor7": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "Sensor8": {
+        "functionType": "Two Step Jump Function",
+        "lowTemp": "200",
+        "upTemp": "400",
+        "lowHeatTime": "6000",
+        "upHeatTime": "2000",
+        "measuringTime": "50",
+        "numReps": "30"
+    },
+    "MeasurementName": "BASF 27.11.2024",
+    "OptimizationAlgorithm": "Algorithm 1",
+    "IterationsPerGlass": "1",
+    "Glasses": {
+        "Glass1": {
+            "content": "644-2",
+            "temperatureTarget": "80"
+        },
+        "Glass2": {
+            "content": "644-8",
+            "temperatureTarget": "80"
+        },
+        "Glass3": {
+            "content": "645-1",
+            "temperatureTarget": "80"
+        },
+        "Glass4": {
+            "content": "645-2",
+            "temperatureTarget": "80"
+        }
+    },
+    "RinseDuration": "180",
+    "RinseTemperature": "400"
+}
