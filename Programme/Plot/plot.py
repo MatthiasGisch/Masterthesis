@@ -18,10 +18,10 @@ measurements4 = df4['Measurement']
 time4 = df4['Time']
 
 # Create a line plot
-plt.plot(time, measurements, color = 'blue', label = '644-2 80°')
-plt.plot(time, measurements2, color = 'yellow', label = '644-8 80°')
-plt.plot(time, measurements3, color = 'green', label = '645-1 80°')
-plt.plot(time, measurements4, color = 'red', label = '645-2 80°')
+plt.plot(time, measurements, color = 'blue', label = '644-2')
+plt.plot(time4, measurements4, color = 'yellow', label = '645-2')
+plt.plot(time3, measurements3, color = 'green', label = '645-1')
+plt.plot(time2, measurements2, color = 'red', label = '644-8')
 plt.grid(True)
 
 plt.ylabel('Messwert')
