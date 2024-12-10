@@ -15,13 +15,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score
 
-from help.helper import getSensorInformation
-from data.preprocessingFunc import getValueColumnsNames
+#from help.helper import getSensorInformation
+#from data.preprocessingFunc import getValueColumnsNames
 
 
 def calcPCA(df, components):
     columns = df.columns.tolist()
-    columns = getValueColumnsNames(columns)
+    columns = [""]
 
     y = df["Measurements"].values
     X = (df[columns].apply(pd.to_numeric)).values
@@ -46,11 +46,11 @@ def calcPCA(df, components):
     return dfPCA
 
 def createPCA(inputFolder, sensor, profiles, components, exportFolder):
-    sensorInformation = getSensorInformation(sensor)
-    ai = sensorInformation["ai"]
+    #sensorInformation = getSensorInformation(sensor)
+    #ai = sensorInformation["ai"]
 
-    if(ai) != True:
-        return
+    #if(ai) != True:
+        #return
 
     if not os.path.exists(exportFolder):
         os.makedirs(exportFolder)
@@ -109,7 +109,7 @@ def createPCA(inputFolder, sensor, profiles, components, exportFolder):
 
 def calcLDA(df, components):
     columns = df.columns.tolist()
-    columns=getValueColumnsNames(columns)
+    columns = getValueColumnsNames(columns)
 
     y = df["_substance"].values
     X = (df[columns].apply(pd.to_numeric)).values
@@ -134,11 +134,11 @@ def calcLDA(df, components):
     return dfLDA
 
 def createLDA(inputFolder, sensor, profiles, components, exportFolder):
-    sensorInformation = getSensorInformation(sensor)
-    ai = sensorInformation["ai"]
+    #sensorInformation = getSensorInformation(sensor)
+    #ai = sensorInformation["ai"]
 
-    if(ai) != True:
-        return
+    #if(ai) != True:
+        #return
 
     if not os.path.exists(exportFolder):
         os.makedirs(exportFolder)
@@ -238,12 +238,12 @@ def calcSVM(df, exportFolder , fileName):
     return
 
 def createSVM(inputFolder, sensor, profiles, exportFolder):
-    sensorInformation = getSensorInformation(sensor)
-    ai = sensorInformation["ai"]
+    #sensorInformation = getSensorInformation(sensor)
+    #ai = sensorInformation["ai"]
     profiles = []
     
-    if(ai) != True:
-        return
+    #if(ai) != True:
+        #return
 
     if not os.path.exists(exportFolder):
         os.makedirs(exportFolder)
